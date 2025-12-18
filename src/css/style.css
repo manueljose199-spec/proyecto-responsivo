@@ -175,3 +175,25 @@ main {
     margin-bottom: 2rem;
     max-width: 600px;
 }
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.btn-primary {
+    background: grey;
+    color: aliceblue;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 10px 30px rgba(0, 242, 254, 0.3);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
