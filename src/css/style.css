@@ -197,3 +197,32 @@ main {
     cursor: pointer;
 }
 
+.btn-primary:hover {
+    transform: translateX(-3px);
+    box-shadow: 0 15px 40px rgba(0, 242, 254, 0.4);
+
+}
+
+.btn-secundary {
+    background-color: #764ba2;
+    border: 2 solid teal;
+    color: #eee9f3;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-secundary:hover {
+    background: #3856d8;
+    border-color: aqua;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover .arrow {
+    transform: translateX(5px);
+}
+
