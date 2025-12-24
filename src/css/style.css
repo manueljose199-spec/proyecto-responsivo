@@ -522,3 +522,90 @@ img {
   color: #764ba2;
   line-height: 1.7;
 }
+
+.contenedor-contacto {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.formulario-contacto {
+  background: #c6cadb;
+  backdrop-filter: blur (20px);
+  border: 1px solid #667eea;
+  padding: 2.5rem;
+  border-radius: 20px;
+}
+
+.grupo-formulario {
+  margin-bottom: 1.5rem;
+}
+
+.grupo-formulario label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #667eea;
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea {
+  width: 100%;
+  padding: 1rem;
+  background: #764ba2;
+  border: 2px solid #667eea;
+  border-radius: 12px;
+  color: #667eea;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario textarea:focus {
+  outline: none;
+  border-color: #3856d8;
+  box-shadow: 0 0 0 4px rgba(0, 242, 254, 0.1);
+}
+
+.grupo-formulario textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.boton-completo {
+  width: 100%;
+  justify-content: center;
+}
+
+.info-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tarjeta-info {
+  background: #3856d8;
+  backdrop-filter: blur(20px);
+  border: 1px solid #667eea;
+  padding: 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+
+}
+
+.icono-info {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.tarjeta-info h4 {
+  margin-bottom: 0.5rem;
+  color: #fb923c;
+}
+
+.tarjeta-info p {
+  color: aqua;
+}
