@@ -1,3 +1,26 @@
+:root {
+  :root {
+  --fondo: #0a0e27;
+  --fondo-secundario: #151933;
+  --fondo-tarjeta: #1a1f3a;
+  --texto: #e4e7f5;
+  --texto-suave: #a8b2d1;
+  --primario: #00f2fe;
+  --secundario: #4facfe;
+  --acento: #7b68ee;
+  --peligro: #ff4757;
+  --exito: #00e676;
+  --advertencia: #ffd93d;
+  --vidrio: rgba(26, 31, 58, 0.7);
+  --borde-vidrio: rgba(255, 255, 255, 0.1);
+  --sombra: 0 8px 32px rgba(0, 0, 0, 0.6);
+  --gradiente-primario: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradiente-secundario: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradiente-cyber: linear-gradient(135deg, #00f2fe 0%, #4facfe 50%, #7b68ee 100%);
+}
+  
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -745,3 +768,5 @@ img {
   transform: scale(1.05);
   box-shadow: 0 5px 20px rgba(0, 242, 254, 0.3);
 }
+
+
