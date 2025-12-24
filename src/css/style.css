@@ -108,7 +108,7 @@ img {
 }
 
 .logo-destacado {
-  background: var(--gradiente-cyber);
+  background: var(--gradiente-primario);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -145,7 +145,7 @@ img {
   transform: translateX(-50%);
   width: 30px;
   height: 3px;
-  background: var(--gradiente-cyber);
+  background: var(--gradiente-secundario);
   border-radius: 10px;
 }
 
@@ -307,7 +307,7 @@ img {
 .numero-estadisticas {
   font-size: 2rem;
   font-weight: 800;
-  background-color: var(--gradiente-cyber);
+  background-color: var(--exito);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -513,12 +513,12 @@ img {
 
 .nivel-amenaza.critico {
   background: rgba(220, 38, 38, 0.2);
-  color: #dc2626;
+  color: var(--peligro);
 }
 
 .nivel-amenaza.medio {
   background: rgba(251, 146, 60, 0.2);
-  color: #fb923c;
+  color: var(--advertencia);
 }
 
 .contenedor-consejos {
