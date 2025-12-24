@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="encabezado-principal">
+      <div class="contenedor-encabezado">
+        <h1 id="logo-sitio" class="logo">
+          <span class="icono-logo">🛡️</span>
+          Ciber <span class="logo-destacado">secure</span>
+        </h1>
+
+        <nav class="navegacion-principal">
+          <ul>
+            <li><a href="#inicio" class="enlace-nav activo">Inicio</a></li>
+            <li><a href="#amenazas" class="enlace-nav">Amenazas</a></li>
+            <li><a href="#consejos" class="enlace-nav">Consejos</a></li>
+            <li><a href="#contacto" class="enlace-nav">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <button id="boton-tema" class="boton-tema">
+          <span class="icono-tema">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="seccion-hero">
+        <div class="animacion-fondo"></div>
+        <div class="contenedor-hero">
+          <div class="contenido-hero">
+            <span class="etiqueta-hero">🔒 seguridad digital</span>
+            <h2 class="titulo-hero">
+              protege tu <span class="texto-gradiente"> Seguridad </span>
+            </h2>
+            <p class="descripcion-hero">
+              Explora los conseptos clave de la ciberseguridad y aprende a
+              protegerte de las amanazas modernas con las mejores practicas del
+              sector
+            </p>
+            <div class="botones-hero">
+              <a href="#amenazas" class="boton-primario">
+                <span>comenzar ahora</span>
+                <span class="flecha-boton">>>></span>
+              </a>
+
+              <a href="#consejos" class="boton-secundario"> ver consejos </a>
+            </div>
+
+            <div class="estadisticas">
+              <div class="item-estadisticas">
+                <span class="numero-estadisticas">99%</span>
+                <span class="etiqueta-estadistica">Protección</span>
+              </div>
+
+              <div class="item-estadisticas">
+                <span class="numero-estadisticas">24/7</span>
+                <span class="etiqueta-estadistica">Monitoreo</span>
+              </div>
+
+              <div class="item-estadisticas">
+                <span class="numero-estadisticas">1m+</span>
+                <span class="etiqueta-estadistica">Usuarios</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="visual-hero">
+          <div class="tarjeta-hero flotante">
+            <div class="icono-escudo">🛡️</div>
+            <div class="anillos-seguridad"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AMENAZAS SECTION -->
+
+      <section id="amenazas" class="seccion-contenido seccion-amenazas">
+        <div class="encabezado-seccion">
+          <span class="etiqueta-seccion">⚠️ Mantente Alerta</span>
+          <h2 class="titulo-seccion">Amenazas comunes</h2>
+          <p class="descripcion-seccion">
+            Conoce las principales amenazas cibernéticas y cómo identificarlas
+          </p>
+        </div>
+
+        <div class="cuadricula-tarjetas">
+          <article class="tarjeta-amenaza">
+            <div class="icono-tarjeta peligro">📧</div>
+            <h3 class="titulo-tarjeta">Phishing</h3>
+            <p class="descripcion-tarjeta">es un virus</p>
+            <div class="pie-tarjeta">
+              <span class="nivel-amenaza alto">Alto riesgo</span>
+            </div>
+          </article>
+
+          <article class="tarjeta-amenaza">
+            <div class="icono-tarjeta advertencia">🦠</div>
+            <h3 class="titulo-tarjeta">Malware</h3>
+            <p class="descripcion-tarjeta">
+              Software malicioso que puede robar información, dañar tu sistema o
+              tomar control de tus dispositivos.
+            </p>
+            <div class="pie-tarjeta">
+              <span class="nivel-amenaza alto">Alto riesgo</span>
+            </div>
+          </article>
+
+          <article class="tarjeta-amenaza">
+            <div class="icono-tarjeta critico">🔐</div>
+            <h3 class="titulo-tarjeta">Ransomware</h3>
+            <p class="descripcion-tarjeta">
+              Bloquea tus archivos mediante cifrado y exige un rescate económico
+              para poder recuperar el acceso a tu información.
+            </p>
+            <div class="pie-tarjeta">
+              <span class="nivel-amenaza critico">Crítico</span>
+            </div>
+          </article>
+
+          <article class="tarjeta-amenaza">
+            <div class="icono-tarjeta medio">👤</div>
+            <h3 class="titulo-tarjeta">Ingenieria social</h3>
+            <p class="descripcion-tarjeta">
+              Técnicas de manipulación psicológica para engañar a las personas y
+              obtener información confidencial.
+            </p>
+            <div class="pie-tarjeta">
+              <span class="nivel-amenaza medio">Riesgo medio</span>
+            </div>
+          </article>
+
+          <article class="tarjeta-amenaza">
+            <div class="icono-tarjeta advertencia">🌐</div>
+            <h3 class="titulo-tarjeta">Ataques DDoS</h3>
+            <p class="descripcion-tarjeta">
+              Sobrecarga de servidores con tráfico masivo para interrumpir
+              servicios y dejarlos inaccesibles.
+            </p>
+            <div class="pie-tarjeta">
+              <span class="nivel-amenaza alto">Alto riesgo</span>
+            </div>
+          </article>
+
+          <article class="tarjeta-amenaza">
+            <div class="icono-tarjeta medio">💳</div>
+            <h3 class="titulo-tarjeta">Robo de identidad</h3>
+            <p class="descripcion-tarjeta">
+              Uso fraudulento de tu información personal para cometer delitos o
+              realizar transacciones no autorizadas.
+            </p>
+            <div class="pie-tarjeta">
+              <span class="nivel-amenaza alto">Alto riesgo</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="consejos" class="seccion-contenido">
+        <div class="encabezado-seccion">
+          <span class="etiqueta-seccion">✨ Mejores Prácticas</span>
+          <h2 class="titulo-seccion">Protege tus datos</h2>
+          <p class="descripcion-seccion">
+            Implementa estas medidas de seguridad para mantener tu información a
+            salvo
+          </p>
+        </div>
+
+        <div class="contenedor-consejos">
+          <div class="tarjeta-consejo">
+            <div class="icono-consejo">🔑</div>
+            <h3>contraseñas seguras</h3>
+            <p>
+              Utiliza contraseñas largas, únicas y complejas para cada cuenta.
+              Considera usar un gestor de contraseñas.
+            </p>
+          </div>
+
+          <div class="tarjeta-consejo">
+            <div class="icono-consejo">🔐</div>
+            <h3>Autenticación 2Fa</h3>
+            <p>
+              Habilita la autenticación en dos factores en todas tus cuentas
+              importantes para añadir una capa extra de seguridad.
+            </p>
+          </div>
+
+          <div class="tarjeta-consejo">
+            <div class="icono-consejo">📱</div>
+            <h3>Actualizaciones regulars</h3>
+            <p>
+              Mantén tu sistema operativo y aplicaciones actualizadas para
+              protegerte de vulnerabilidades conocidas.
+            </p>
+          </div>
+
+          <div class="tarjeta-consejo">
+            <div class="icono-consejo">🚫</div>
+            <h3>Enlaces Sospechosos</h3>
+            <p>
+              Nunca hagas clic en enlaces o descargues archivos de remitentes
+              desconocidos o correos sospechosos.
+            </p>
+          </div>
+
+          <div class="tarjeta-consejo">
+            <div class="icono-consejo">💾</div>
+            <h3>Respaldos Frecuentes</h3>
+            <p>
+              Realiza copias de seguridad periódicas de tus datos importantes en
+              ubicaciones seguras y externas.
+            </p>
+          </div>
+
+          <div class="tarjeta-consejo">
+            <div class="icono-consejo">🌐</div>
+            <h3>Redes seguras</h3>
+            <p>
+              Evita conectarte a redes WiFi públicas sin protección. Usa VPN
+              cuando sea necesario.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="seccion-contenido">
+        <div class="encabezado-seccion">
+          <span class="etiqueta-seccion">📬 Contáctanos</span>
+          <h2 class="titulo-seccion">¿Necesitas ayuda?</h2>
+          <p class="descripcion-seccion">
+            Envíanos tu consulta y nuestro equipo te responderá lo antes posible
+          </p>
+        </div>
+
+        <div class="contenedor-contacto">
+          <form class="formulario-contacto">
+            <div class="grupo-formulario">
+              <label for="nombre">Nombre completo</label>
+              <input
+                id="nombre"
+                type="text"
+                placeholder="José Manuel"
+                required
+              />
+            </div>
+
+            <div class="grupo-formulario">
+              <label for="correo">Correo electronico</label>
+              <input
+                id="correo"
+                type="email"
+                placeholder="Josemanuel@gmail"
+                required
+              />
+            </div>
+
+            <div class="grupo-formulario">
+              <label for="nombre">Nombre completo</label>
+              <input
+                id="nombre"
+                type="text"
+                placeholder="José Manuel"
+                required
+              />
+            </div>
+
+            <div class="grupo-formulario">
+              <label for="asunto">mensaje</label>
+              <input
+                id="mensaje"
+                rows="5"
+                placeholder="Escribe tu consulta aquí..."
+                required
+              />
+            </div>
+
+            <button type="submit" class="boton-primario boton-completo">
+              <span>Enviar mensaje</span>
+              <span class="flecha-boton">→</span>
+            </button>
+          </form>
+
+          <div class="info-contacto">
+            <div class="tarjeta-info">
+              <div class="icono-info">📧</div>
+              <h4>Email</h4>
+              <p>soporte@cybersecure.com</p>
+            </div>
+
+            <div class="tarjeta-info">
+              <div class="icono-info">💬</div>
+              <h4>Chat en vivo</h4>
+              <p>Disponible 24/7</p>
+            </div>
+
+            <div class="tarjeta-info">
+              <div class="icono-info">📱</div>
+              <h4>Telefono</h4>
+              <p>4272002909</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="pie-pagina">
+      <div class="contenedor-footer">
+        <div class="seccion-footer">
+          <h3 class="logo-footer">🛡️ Cyber <span>Secure</span></h3>
+          <p>Protegiendo tu identidad digital desde 2025</p>
+        </div>
+
+        <div class="seccion-footer">
+          <h4>Enlaces rapidos</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#amenazas">Amenazas</a></li>
+            <li><a href="#consejos">Consejos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="seccion-footer">
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Guías</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Soporte</a></li>
+          </ul>
+        </div>
+
+        <div class="seccion-footer">
+          <h4>Síguenos</h4>
+          <div class="enlaces-sociales">
+            <a href="#" class="enlace-social">🐦</a>
+            <a href="#" class="enlace-social">📘</a>
+            <a href="#" class="enlace-social">💼</a>
+            <a href="#" class="enlace-social">📸</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pie-footer">
+        <p>
+          © 2025 CyberSecure | Proyecto de Josemanuel | Todos los derechos
+          reservados
+        </p>
+      </div>
+    </footer>
+
+    <div id="bannerCookies" class="banner-cookies">
+      <p>
+        🍪 Este sitio utiliza cookies para mejorar tu experiencia de navegación
+      </p>
+      <div class="acciones-cookies">
+        <a href="#" class="info-cookies">Más Información</a>
+        <button id="aceptarCookies" class="boton-aceptar-cookies">
+          Aceptar
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
