@@ -29,16 +29,24 @@ a {
   color: inherit;
 }
 
-.top-header {
-  position: fixed;
+img {
+  max-width: 100%;
+  color: inherit;
+}
+
+.encabezado-principal {
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   background-color: aquamarine;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid #667eea;
+  transition: all 0.3s ease;
 }
 
-.container-header {
+.contenedor-encabezado {
   max-width: 1400px;
   margin: 0 auto;
   padding: 1rem 2rem;
@@ -48,32 +56,34 @@ a {
   gap: 2rem;
 }
 
-.logo {
-  height: 70px;
-  border-radius: 10px;
+#logo-sitio {
+  font-size: 1.5rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.icon {
+.icono-logo {
   font-size: 1.8rem;
 }
-.secure {
+
+.logo-destacado {
   background: linear-gradient(45deg, #667eea, #764ba2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.main-nav ul {
+.navegacion-principal ul {
   display: flex;
   list-style: none;
   gap: 2rem;
   align-items: center;
-}
-main {
-  margin-top: 100px; /* altura del header */
+  
 }
 
-.nav-link {
+.enlace-nav {
   color: #667eea;
   font-weight: 600;
   font-size: 0.95rem;
@@ -83,13 +93,13 @@ main {
   position: relative;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.enlace-nav:hover,
+.enlace-nav.active {
   color: rgb(22, 27, 26);
   background: glass;
 }
 
-.nav-link.nav-link.active::after {
+.enlace-nav.activo::after {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -101,17 +111,22 @@ main {
   border-radius: 10px;
 }
 
-.theme-btn {
+.boton-tema {
   background: blue;
   border: 1px solid #764ba2;
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
 }
 
-.theme-btn:hover {
+.boton-tema:hover {
   background: navy;
   transform: scale(1.05);
 }
 
-.hero {
+.seccion-hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -121,7 +136,7 @@ main {
   overflow: hidden;
 }
 
-.hero-animacion {
+.animacion-fondo {
   position: absolute;
   inset: 0;
   background-color: radial-gradient(
@@ -148,7 +163,7 @@ main {
   }
 }
 
-.hero-contenedor {
+.contenedor-hero {
   max-width: 1400px;
   width: 100%;
   display: grid;
@@ -158,7 +173,7 @@ main {
   position: relative;
   z-index: 1;
 }
-.tem {
+.etiqueta-hero {
   display: inline-block;
   background: blueviolet;
   border: 1px solid #667eea;
@@ -170,33 +185,33 @@ main {
   color: aquamarine;
 }
 
-.titulo {
+.titulo-hero {
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
   line-height: 1.1;
 }
 
-.text {
+.texto-gradiente {
   background: rgb(66, 133, 235);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.descripcion {
+.descripcion-hero {
   font-size: 1.2rem;
   color: cornflowerblue;
   margin-bottom: 2rem;
   max-width: 600px;
 }
 
-.buttons {
+.butones-hero {
   display: flex;
   gap: 1rem;
   margin-bottom: 3rem;
 }
 
-.btn-primary {
+.boton-primario {
   background: grey;
   color: aliceblue;
   padding: 1rem 2rem;
@@ -211,12 +226,12 @@ main {
   cursor: pointer;
 }
 
-.btn-primary:hover {
+.boton-primario:hover {
   transform: translateX(-3px);
   box-shadow: 0 15px 40px rgba(0, 242, 254, 0.4);
 }
 
-.btn-secundary {
+.boton-secundario {
   background-color: #764ba2;
   border: 2 solid teal;
   color: #eee9f3;
@@ -226,30 +241,30 @@ main {
   transition: all 0.3s ease;
 }
 
-.btn-secundary:hover {
+.boton-secundario:hover {
   background: #3856d8;
   border-color: aqua;
 }
 
-.arrow {
+.flecha-boton {
   transition: transform 0.3s ease;
 }
 
-.btn-primary:hover .arrow {
+.boton-primario:hover .flecha-boton{
   transform: translateX(5px);
 }
 
-.hero-stats {
+.estadisticas-hero {
   display: flex;
   gap: 3rem;
 }
 
-.stat-item {
+.item-estadisticas {
   display: flex;
   flex-direction: column;
 }
 
-.stat-number {
+.numero-estadisticas {
   font-size: 2rem;
   font-weight: 800;
   background-color: #667eea;
@@ -258,18 +273,18 @@ main {
   background-clip: text;
 }
 
-.stat-label {
+.etiqueta-estadistica {
   font-size: 0.9rem;
   color: aquamarine;
 }
 
-.visual {
+.visual-hero {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card {
+.targeta-hero {
   background-color: blueviolet;
   backdrop-filter: blur(20px);
   border: 1px solid #764ba2;
@@ -279,13 +294,13 @@ main {
   position: relative;
 }
 
-.escudo {
+.icono-escudo {
   font-size: 10rem;
   text-align: center;
   filter: drop-shadow(0 0 30px rgba(0, 242, 254, 0.5));
 }
 
-.flingoat {
+.flotante {
   animation: float 6s ease-in-out infinite;
   -webkit-animation: float 6s ease-in-out infinite;
 }
@@ -300,7 +315,7 @@ main {
   }
 }
 
-.seguridad {
+.anillos-seguridad {
   position: absolute;
   inset: -20px;
   border: 2px solid #3856d8;
