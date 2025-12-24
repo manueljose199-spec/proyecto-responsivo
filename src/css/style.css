@@ -690,3 +690,7 @@ color: #eee9f3;
   padding: 2rem 0 1rem;
   color: #3856d8;
 }
+
+section {
+  scroll-margin-top: 100px;
+}
