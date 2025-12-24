@@ -18,7 +18,7 @@ body {
 
 h1,
 h2,
-h3{
+h3 {
   line-height: 1.2;
   font-weight: 700;
 }
@@ -79,7 +79,6 @@ img {
   list-style: none;
   gap: 2rem;
   align-items: center;
-  
 }
 
 .enlace-nav {
@@ -136,8 +135,7 @@ img {
 }
 
 .animacion-fondo {
-  background:
-    radial-gradient(
+  background: radial-gradient(
       circle at 20% 50%,
       rgba(102, 126, 234, 0.1) 0%,
       transparent 50%
@@ -194,11 +192,11 @@ img {
   background-clip: text;
 }
 
- .contenido-hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.contenido-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .descripcion-hero {
   font-size: 1.2rem;
@@ -235,7 +233,7 @@ img {
 
 .boton-secundario {
   background-color: #764ba2;
- border: 2px solid teal;
+  border: 2px solid teal;
   color: #eee9f3;
   padding: 1rem 2rem;
   border-radius: 12px;
@@ -252,7 +250,7 @@ img {
   transition: transform 0.3s ease;
 }
 
-.boton-primario:hover .flecha-boton{
+.boton-primario:hover .flecha-boton {
   transform: translateX(5px);
 }
 
@@ -333,9 +331,9 @@ img {
     transform: scale(1);
     opacity: 0.3;
   }
-  50%{
+  50% {
     transform: scale(1.05);
-}
+  }
 }
 
 .cuadricula-tarjetas {
@@ -378,7 +376,7 @@ img {
   margin: 0 auto;
 }
 
-.tarjeta-amenaza  {
+.tarjeta-amenaza {
   background-color: rgb(35, 37, 37);
   backdrop-filter: blur(20px);
   border: 1px solid tomato;
@@ -406,25 +404,40 @@ img {
 }
 
 .icono-tarjeta.peligro {
-  background: linear-gradient(135deg, rgba(255, 71, 87, 0.2) 0%, rgba(255, 71, 87, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 71, 87, 0.2) 0%,
+    rgba(255, 71, 87, 0.05) 100%
+  );
 }
 
 .icono-tarjeta.advertencia {
-  background: linear-gradient(135deg, rgba(255, 217, 61, 0.2) 0%, rgba(255, 217, 61, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 217, 61, 0.2) 0%,
+    rgba(255, 217, 61, 0.05) 100%
+  );
 }
 
 .icono-tarjeta.critico {
-  background: linear-gradient(135deg, rgba(220, 38, 38, 0.2) 0%, rgba(220, 38, 38, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(220, 38, 38, 0.2) 0%,
+    rgba(220, 38, 38, 0.05) 100%
+  );
 }
 .icono-tarjeta.medio {
-  background: linear-gradient(135deg, rgba(251, 146, 60, 0.2) 0%, rgba(251, 146, 60, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(251, 146, 60, 0.2) 0%,
+    rgba(251, 146, 60, 0.05) 100%
+  );
 }
-
 
 .titulo-tarjeta {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color:#eee9f3;
+  color: #eee9f3;
 }
 .icono-tema {
   pointer-events: none;
@@ -434,10 +447,10 @@ img {
   align-items: center;
 }
 
-.descripcion-tarjeta{
-color: #3856d8;
-line-height: 1.7;
-margin-bottom: 1.5rem;
+.descripcion-tarjeta {
+  color: #3856d8;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
 }
 
 .pie-tarjeta {
@@ -454,16 +467,58 @@ margin-bottom: 1.5rem;
 }
 
 .nivel-amenaza.alto {
-   background: rgba(255, 71, 87, 0.2);
-   color: #3856d8;
+  background: rgba(255, 71, 87, 0.2);
+  color: #3856d8;
 }
 
 .nivel-amenaza.critico {
-   background: rgba(220, 38, 38, 0.2);
+  background: rgba(220, 38, 38, 0.2);
   color: #dc2626;
 }
 
 .nivel-amenaza.medio {
   background: rgba(251, 146, 60, 0.2);
   color: #fb923c;
+}
+
+.contenedor-consejos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tarjeta-consejo {
+  background: #3856d8;
+  backdrop-filter: blur(20px);
+  border: 1px solid #3856d8;
+  padding: 2rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+
+}
+
+.tarjeta-consejo:hover {
+  transform: translateY(-5px);
+  border-color: #eee9f3;
+}
+
+.icono-consejo {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.targeta-consejo {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.targeta-consejo h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #3856d8;
+}
+
+.targeta-consejo p {
+  color: #764ba2;
+  line-height: 1.7;
 }
