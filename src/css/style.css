@@ -11,7 +11,7 @@ html {
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     sans-serif;
-  background-color: rgb(243, 235, 235);
+  background-color: rgb(43, 42, 42);
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -94,7 +94,7 @@ img {
 }
 
 .enlace-nav:hover,
-.enlace-nav.active {
+.enlace-nav.activo {
   color: rgb(22, 27, 26);
   background: glass;
 }
@@ -198,6 +198,12 @@ img {
   background-clip: text;
 }
 
+ .contenido-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 .descripcion-hero {
   font-size: 1.2rem;
   color: cornflowerblue;
@@ -205,7 +211,7 @@ img {
   max-width: 600px;
 }
 
-.butones-hero {
+.botones-hero {
   display: flex;
   gap: 1rem;
   margin-bottom: 3rem;
@@ -254,7 +260,7 @@ img {
   transform: translateX(5px);
 }
 
-.estadisticas-hero {
+.estadisticas {
   display: flex;
   gap: 3rem;
 }
@@ -284,7 +290,7 @@ img {
   align-items: center;
 }
 
-.targeta-hero {
+.tarjeta-hero {
   background-color: blueviolet;
   backdrop-filter: blur(20px);
   border: 1px solid #764ba2;
@@ -334,4 +340,127 @@ img {
   50%{
     transform: scale(1.05);
 }
+}
+
+.cuadricula-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.seccion-contenido {
+  padding: 6rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.encabezado-seccion {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.etiqueta-seccion {
+  display: inline-block;
+  background-color: #3856d8;
+  border: 1px solid #764ba2;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.titulo-seccion {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.descripcion-seccion {
+  font-size: 1.1rem;
+  color: #667eea;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tarjeta-amenaza  {
+  background-color: rgb(35, 37, 37);
+  backdrop-filter: blur(20px);
+  border: 1px solid tomato;
+  padding: 2rem;
+  border-radius: 20px;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.tarjeta-amenaza:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-color: #3856d8;
+}
+
+.icono-tarjeta {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.icono-tarjeta.peligro {
+  background: linear-gradient(135deg, rgba(255, 71, 87, 0.2) 0%, rgba(255, 71, 87, 0.05) 100%);
+}
+
+.icono-tarjeta.advertencia {
+  background: linear-gradient(135deg, rgba(255, 217, 61, 0.2) 0%, rgba(255, 217, 61, 0.05) 100%);
+}
+
+.icono-tarjeta.critico {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.2) 0%, rgba(220, 38, 38, 0.05) 100%);
+}
+.icono-tarjeta.medio {
+  background: linear-gradient(135deg, rgba(251, 146, 60, 0.2) 0%, rgba(251, 146, 60, 0.05) 100%);
+}
+
+
+.titulo-tarjeta {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color:#eee9f3;
+}
+
+.descripcion-targeta{
+color: #3856d8;
+line-height: 1.7;
+margin-bottom: 1.5rem;
+}
+
+.pie-targeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nivel-amenaza {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.nivel-amenaza.alto {
+   background: rgba(255, 71, 87, 0.2);
+   color: #3856d8;
+}
+
+.nivel-amenaza.critico {
+   background: rgba(220, 38, 38, 0.2);
+  color: #dc2626;
+}
+
+.nivel-amenaza.medio {
+  background: rgba(251, 146, 60, 0.2);
+  color: #fb923c;
 }
