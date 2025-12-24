@@ -634,7 +634,7 @@ img {
 
 .seccion-footer h4 {
   margin-bottom: 1rem;
-   color:#764ba2;
+  color: #764ba2;
 }
 
 .seccion-footer p {
@@ -655,7 +655,7 @@ img {
 }
 
 .seccion-footer a:hover {
-color: #eee9f3;
+  color: #eee9f3;
 }
 
 .enlaces-sociales {
@@ -684,13 +684,64 @@ color: #eee9f3;
   padding: 4rem 2rem 2rem;
 }
 
-
 .pie-footer {
   text-align: center;
   padding: 2rem 0 1rem;
   color: #3856d8;
 }
 
-section {
-  scroll-margin-top: 100px;
+.banner-cookies {
+  position: fixed;       
+  bottom: -200px;
+  left: 0;
+  right: 0;
+  background: #3856d8;
+  border-top: 2px solid #3856d8; 
+  padding: 1.5rem 2rem;                   
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.3);
+  z-index: 2000;        
+  transition: bottom 0.5s ease;
+}
+
+
+.banner-cookies.mostrar {
+  bottom: 0;
+}
+
+.banner-cookies p {
+  color: var(--texto);
+  font-size: 0.95rem;
+}
+
+.acciones-cookies {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.info-cookies {
+  color: var(--primario);
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.boton-aceptar-cookies {
+  background: var(--gradiente-cyber);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.boton-aceptar-cookies:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0, 242, 254, 0.3);
 }
