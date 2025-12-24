@@ -494,7 +494,6 @@ img {
   padding: 2rem;
   border-radius: 20px;
   transition: all 0.3s ease;
-
 }
 
 .tarjeta-consejo:hover {
@@ -593,7 +592,6 @@ img {
   padding: 1.5rem;
   border-radius: 16px;
   text-align: center;
-
 }
 
 .icono-info {
@@ -608,4 +606,87 @@ img {
 
 .tarjeta-info p {
   color: aqua;
+}
+
+.pie-pagina {
+  background: #c6cadb;
+  border-top: 1px solid #667eea;
+  padding: 3rem 2rem 1rem;
+  margin-top: 6rem;
+}
+
+.contenedor-footer {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee9f3;
+}
+
+.logo-footer {
+  background: #3856d8;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.seccion-footer h4 {
+  margin-bottom: 1rem;
+   color:#764ba2;
+}
+
+.seccion-footer p {
+  color: aquamarine;
+}
+
+.seccion-footer ul {
+  list-style: none;
+}
+
+.seccion-footer li {
+  margin-bottom: 0.5rem;
+}
+
+.seccion-footer a {
+  color: #667eea;
+  transition: color 0.3s ease;
+}
+
+.seccion-footer a:hover {
+color: #eee9f3;
+}
+
+.enlaces-sociales {
+  display: flex;
+  gap: 1rem;
+}
+
+.enlace-social {
+  width: 45px;
+  height: 45px;
+  background-color: #764ba2;
+  border: 1px solid #3856d8;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: all 03s ease;
+}
+
+.enlace-social:hover {
+  background: violet;
+  transform: translateY(-3px);
+}
+.pie-pagina {
+  padding: 4rem 2rem 2rem;
+}
+
+
+.pie-footer {
+  text-align: center;
+  padding: 2rem 0 1rem;
+  color: #3856d8;
 }
