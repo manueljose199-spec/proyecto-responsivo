@@ -20,6 +20,19 @@
 }
   
 }
+body.light {
+  --fondo: #f0f4ff;
+  --fondo-secundario: #ffffff;
+  --fondo-tarjeta: #ffffff;
+  --texto: #1a1d2e;
+  --texto-suave: #64748b;
+  --primario: #0066ff;
+  --secundario: #00a8ff;
+  --acento: #6366f1;
+  --vidrio: rgba(255, 255, 255, 0.9);
+  --borde-vidrio: rgba(0, 0, 0, 0.1);
+  --sombra: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
 
 * {
   margin: 0;
