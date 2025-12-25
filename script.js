@@ -39,5 +39,3 @@ document.querySelectorAll(".enlace-nav").forEach(link => {
   });
 })
 
-console.log("botonTema:", botonTema);
-console.log("iconoTema:", iconoTema);
