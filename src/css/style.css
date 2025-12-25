@@ -36,6 +36,11 @@ body.light {
   --sombra: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -93,6 +98,7 @@ img {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  grid-template-columns: 1fr;
 }
 
 #logo-sitio {
@@ -685,7 +691,6 @@ img {
 .seccion-footer h4 {
   margin-bottom: 1rem;
   color: var(--primario);
-  
 }
 
 .seccion-footer p {
@@ -813,6 +818,7 @@ img {
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
+    align-items: center;
   }
 
   .descripcion-hero {
@@ -833,9 +839,74 @@ img {
   }
 }
 
+.boton-hamburguesa {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.boton-hamburguesa span {
+  width: 26px;
+  height: 3px;
+  background: var(--texto);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.boton-hamburguesa.activo span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.boton-hamburguesa.activo span:nth-child(2),
+.boton-hamburguesa.activo span:nth-child(3) {
+  opacity: 0;
+}
+
+.boton-hamburguesa.activo span:nth-child(4) {
+  transform: rotate(-45deg) translate(8px, -8px);
+}
+
 @media (max-width: 768px) {
+
+  .contenedor-hero {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  .botones-hero {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .boton-primario,
+  .boton-secundario {
+    width: 100%;
+  }
+
+  .estadisticas {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .visual-hero {
+    padding: 0 1rem;
+  }
+
+  .tarjeta-hero {
+    padding: 2rem;
+    max-width: 100%;
+  }
+  .icono-escudo {
+    font-size: 6rem;
+  }
   .titulo-hero {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
   .descripcion-hero {
     font-size: 1.1rem;
@@ -887,22 +958,46 @@ img {
     text-align: center;
     padding: 1rem;
   }
+
+  .contenedor-contacto {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 0 1rem;
+    }
 }
 
+
 @media (max-width: 480px) {
+  .contenedor-encabezado {
+    padding: 1rem;
+  }
+  .icono-logo {
+    font-size: 1.3rem;
+  }
   #logo-sitio {
     font-size: 1.2rem;
   }
 
   .titulo-hero {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+  }
+
+  .descripcion-hero {
+    font-size: 0.95rem;
   }
 
   .boton-primario,
   .boton-secundario {
     width: 100%;
-    padding: 0.9rem 1rem;
-    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+  .tarjeta-hero {
+    padding: 1.5rem;
+  }
+
+  .icono-escudo {
+    font-size: 5rem;
   }
 
   .enlace-nav {
@@ -913,35 +1008,4 @@ img {
   .contenedor-footer {
     grid-template-columns: 1fr;
   }
-
-  .boton-hamburguesa {
-  display: none;
-  flex-direction: column;
-  gap: 6px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-}
-
-.boton-hamburguesa span {
-  width: 26px;
-  height: 3px;
-  background: var(--texto);
-  border-radius: 3px;
-  transition: all 0.3s ease;
-}
-
-.boton-hamburguesa.activo span:nth-child(1) {
-  transform: rotate(45deg) translate(8px, 8px);
-}
-
-.boton-hamburguesa.activo span:nth-child(2),
-.boton-hamburguesa.activo span:nth-child(3) {
-  opacity: 0;
-}
-
-.boton-hamburguesa.activo span:nth-child(4) {
-  transform: rotate(-45deg) translate(8px, -8px);
-}
 }
