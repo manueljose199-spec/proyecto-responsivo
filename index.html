@@ -29,20 +29,23 @@
           </ul>
         </nav>
 
-        <button id="boton-menu" class="boton-hamburguesa" aria-label="Abrir menú">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <button id="boton-tema" class="boton-tema">
+        <button id="boton-tema" class="boton-tema" aria-label="Cambiar-men">
           <span class="icono-tema">🌙</span>
         </button>
+
+        <button id="boton-menu" class="boton-hamburguesa" aria-label="Abrir menú">
+          <img src="./src/img/burger-menu.png" width="30px" alt="botón boton-hamburguesa">
+          
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
       </div>
 
-
       
+        
     </header>
 
     <main>
@@ -279,12 +282,13 @@
 
             <div class="grupo-formulario">
               <label for="asunto">mensaje</label>
-              <input
+              <textarea >
                 id="mensaje"
                 rows="5"
                 placeholder="Escribe tu consulta aquí..."
                 required
-              />
+              </textarea>
+              
             </div>
 
             <button type="submit" class="boton-primario boton-completo">
@@ -374,6 +378,6 @@
       
     </div>
 
-    <script src="script.js" defer></script>
+    <script src="script.js" ></script>
   </body>
 </html>

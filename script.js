@@ -2,6 +2,9 @@ const botonTema = document.getElementById("boton-tema");
 const body = document.body;
 const iconoTema = document.querySelector(".icono-tema");
 
+const botonMenu = document.getElementById("boton-menu");
+const nav = document.querySelector(".navegacion-principal");
+
 const bannerCookies = document.getElementById("bannerCookies");
 const aceptarCookies = document.getElementById("aceptarCookies");
 
@@ -22,3 +25,19 @@ window.addEventListener("load", () => {
 aceptarCookies.addEventListener("click", () => {
   bannerCookies.classList.remove("mostrar");
 });
+
+
+botonMenu.addEventListener('click',() => {
+  nav.classList.toggle('activo')
+})
+
+
+document.querySelectorAll(".enlace-nav").forEach(link => {
+  link.addEventListener("click", ()=>{
+    nav.classList.remove("activo");
+
+  });
+})
+
+console.log("botonTema:", botonTema);
+console.log("iconoTema:", iconoTema);
