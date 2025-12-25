@@ -573,7 +573,7 @@ img {
 
 .formulario-contacto {
   background: var(--vidrio);
-  backdrop-filter: blur (20px);
+  backdrop-filter: blur(20px);
   border: 1px solid var(--borde-vidrio);
   padding: 2.5rem;
   border-radius: 20px;
@@ -681,7 +681,7 @@ img {
 
 .seccion-footer h4 {
   margin-bottom: 1rem;
-  color: var(--primario)64ba2;
+  color: var(--primario);
 }
 
 .seccion-footer p {
@@ -801,4 +801,80 @@ img {
 .boton-aceptar-cookies:hover {
   transform: scale(1.05);
   box-shadow: 0 5px 20px rgba(0, 242, 254, 0.3);
+}
+
+
+/*estilos responsivos*/
+
+@media (max-width: 1024px){
+  .contenedor-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .descripcion-hero {
+    font-size: 1.1rem;
+  }
+
+  .cuadricula-tarjetas {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .seccion-contenido {
+    padding: 4rem 1.5rem;
+  }
+
+  .pie-pagina {
+    padding: 3rem 1.5rem 1.5rem;
+  }
+}
+
+@media(max-width: 768px){
+  .titulo-hero {
+    font-size: 2.8rem;
+  }
+  .descripcion-hero {
+    font-size: 1.1rem;
+  }
+
+  .cuadricula-tarjetas {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .seccion-contenido {
+    padding: 4rem 1.5rem 1.5rem;
+  }
+
+  .pie-pagina {
+    padding: 3rem 1.5rem 1.5rem;
+  }
+}
+
+@media(max-width: 480px) {
+  #logo-sitio {
+    font-size: 1.2rem;
+  }
+
+  .titulo-hero {
+    font-size: 2.2rem;
+  }
+
+  .boton-primario,
+  .boton-secundario {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .enlace-nav {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .contenedor-footer {
+    grid-template-columns: 1fr;
+  }
 }
