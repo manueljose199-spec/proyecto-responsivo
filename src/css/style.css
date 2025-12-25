@@ -121,6 +121,10 @@ img {
   align-items: center;
 }
 
+.boton-hamburguesa {
+  display: none;
+}
+
 .enlace-nav {
   color:var(--texto-suave);
   font-weight: 600;
@@ -877,4 +881,42 @@ img {
   .contenedor-footer {
     grid-template-columns: 1fr;
   }
+
+  .navegacion-principal {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: var(--vidrio);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid var(--borde-vidrio);
+    padding: 1rem 0;
+  }
+
+  .navegacion-principal.activo {
+    display: block;
+  }
+
+  .navegacion-principal ul {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center; 
+  }
+
+  .boton-hamburguesa {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .boton-hamburguesa span {
+    width: 26px;
+    height: 3px;
+    background: var(--texto);
+    border-radius: 3px;
+}
 }
