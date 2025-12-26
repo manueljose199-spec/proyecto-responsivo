@@ -29,7 +29,7 @@ El diseño incluye imágenes, favicon y botones para el modo oscuro y las cookie
 
 /raiz
 ├─index.html
-├─style.css
+├─src/css/style.css
 ├─script.js
 ├─assets/favicon/
 ├─img
